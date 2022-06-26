@@ -24,7 +24,7 @@ body {
   transform: translate(-50%, -50%);
   background-color: hsl(217, 19%, 24%);
   width: 70%;
-  height: 250px;
+  min-height: 250px;
   border-radius: 20px;
   padding: 50px 35px 70px 35px;
   color: hsl(193, 38%, 86%);
@@ -32,7 +32,7 @@ body {
 }
 
 .popup-content {
-  height: 100%;
+  min-height: 250px;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
@@ -81,12 +81,24 @@ body {
   background-color: hsl(150, 100%, 66%);
 }
 
+.loading-for-adv {
+  background-image: url('https://raw.githubusercontent.com/AmineHLub/covstate/master/src/assets/loading.gif');
+  background-repeat: no-repeat;
+  background-position: 50% 50px;
+  background-size: 220px;
+}
+
 
 
 @media only screen and (min-width: 375px) {
   .fixed-popup {
   max-width: 500px;
   height: 210px;
+  }
+
+  .loading-for-adv {
+  background-position: 50% 5px;
+  background-size: 280px;
   }
 
   .reroll-container {
