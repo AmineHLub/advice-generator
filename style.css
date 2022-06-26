@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.dflex {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  --main-orange: hsl(25, 97%, 53%)
+}
+
+.fixed-popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(217, 19%, 24%);
+  width: 70%;
+  height: 250px;
+  border-radius: 20px;
+  padding: 50px 35px 70px 35px;
+  color: hsl(217, 12%, 63%);
+  font-family: Manrope;
+}
+
+.popup-content {
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.advice-tag-id,
+.advice-paragraph {
+  margin: 0 0 10px 0;
+}
+
+.advice-tag-id {
+  font-size: 0.9rem;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 2px;
+}
+
+.advice-paragraph {
+  font-size: 28px;
+}
+
+.pause-logo-container {
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-bar {
+  width: 50%;
+  height: 4px;
+  background-color: #4f5d746b;
+  border-radius: 30px;
+}
+
+.pause-logo-container > img {
+  margin: 0 15px;
+}
+
+.reroll-container {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+}
+
+
+
+@media only screen and (min-width: 375px) {
+  .fixed-popup {
+  max-width: 500px;
+  height: 210px;
+  }
+}

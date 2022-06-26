@@ -2,27 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Advice generator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="fixed-popup">
+    <div class="popup-content dflex">
+      <h2 class="advice-tag-id">Advice #1171</h2>
+      <p class="advice-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Fugit obcaecati
+      </p>
+      <div class="pause-logo-container dflex">
+        <div class="vertical-bar"></div>
+        <img src="./images/slicer-logo.png" alt="pause-logo">
+        <div class="vertical-bar"></div>
+      </div>
+    </div>
+    <div class="reroll-container">
+      <img class="reroll" src="./images/reroll.png" alt="reroll-logo">
+    </div>
   </div>
 </body>
+<script src="script.js"></script>
 </html>
