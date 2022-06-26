@@ -118,3 +118,23 @@ body {
     transform: rotate(360deg);
   }
 }
+
+footer { 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+ }
+
+.attribution {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.8rem;
+  font-family: bold;
+  color: white;
+  font-family: Overpass;
+}
+.attribution a { 
+  color: hsl(150, 100%, 66%);
+ }
